@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Document</title>
   <style>
-    html,body{
+    html,body,ul{
       height: 100%;
       margin: 0;
       padding: 0;
@@ -14,12 +14,24 @@
       margin: 0;
       padding: 0;
     }
+    li{
+      list-style: none;
+      float: left;
+    }
+    a{
+      text-decoration: none;
+      color:#343434;
+    }
 
     .fl{
       float: left;
     }
     .fr{
       float: right;
+    }
+    .index{
+      width: 100%;
+      height: 100%;
     }
 
     .login{
@@ -28,13 +40,14 @@
     }
     .header{
       width: 100%;
-      height: 8.5%;
+      height: 7.8%;
     }
     .top{
-      height: 80px;
-      line-height: 80px ;
+      height: 100%;
+      line-height: 84px ;
       width: 63%;
       margin: 0 auto;
+
     }
     .top img {
         height: 32px;
@@ -45,8 +58,39 @@
       list-style: none;
       float: left;
     }
-    .top li img{
+    .top .user_p li:nth-child(2){
+      margin:0 22px 0 18px;
+      width: 1px;
+      color: #dbdbdb;
+    }
+    .user_p .user_name{
+      margin-left: 26px;
+    }
+    .user_p .user_name span{
+      margin-left: 15px;
+      font-size: 16px;
+      color: #333333;
+    }
+    .top .user_p img{
       border-radius: 50%;
+    }
+    .ban{
+     height: 25%;
+    }
+    .ban img{
+      height: 100%;
+      width: 100%;
+    }
+    .footer{
+      width: 100%;
+      height: 6%;
+      background-color: #e4e4e4;
+      position: absolute;
+      bottom:0;
+
+    }
+    .footer ul li:nth-child(even){
+      margin:0 10px;
     }
   </style>
 </head>
@@ -58,14 +102,35 @@
         <div class="fl">
           <img src="../img/logo.png" alt="">
         </div>
-        <div class="fr">
-          <li>关于BOE</li>
+        <div class="fr user_p">
+          <li style="">关于BOE</li>
           <li>|</li>
           <li>English</li>
-          <li><a href="javascript:;"><img src="../img/pic.jpg" alt=""></a></li>
-          <span>王翠花</span>
+          <div  class="user_name" style="display: inline-block;">
+            <a href="javascript:;"><img src="../img/pic.jpg" alt=""></a>
+            <span>王翠花</span>
+          </div>
         </div>
       </div>
+    </div>
+    <!-- banner图 -->
+    <div class="ban">
+      <img src="../img/banner.png" alt="">
+    </div>
+
+    <!-- 底部栏 -->
+    <div class="footer">
+        <ul>
+            <li><a href="javascript:;">保密声明</a></li>
+            <li>|</li>
+            <li><a href="javascript:;">隐私条款</a></li>
+            <li>|</li>
+            <li><a href="javascript:;">CIP介绍</a></li>
+            <li>|</li>
+            <li><a href="javascript:;">使用指南</a></li>
+            <li>|</li>
+            <li><a href="javascript:;">联系我们</a></li>
+        </ul>
     </div>
   </div>
 </body>
