@@ -5,9 +5,7 @@
     <div class="header">
       <div class="top">
         <div class="fl">
-          <li>BOE</li>
-          <li>|</li>
-          <li>协同创新平台</li>
+          <img src="logo.png" alt="">
         </div>
         <div class="fr">
           <li>关于BOE</li>
@@ -22,23 +20,19 @@
           <h2>登录平台</h2>
           <form action="javascript:;">
             <div>
-              <i></i>
-              <input type="text" placeholder="请输入用户名">
+              <label for="username"></label>
+              <input type="text" placeholder="请输入用户名" id="username">
             </div>
             <div>
-              <i></i>
-              <input type="password" placeholder="请输入密码">
+              <label for="password"></label>
+              <input type="password" placeholder="请输入密码" id="password">
             </div>
             <div>
-              <input type="text">
+
             </div>
-            <div>
-               <el-radio v-model="radio" label="1">English</el-radio>
-              <el-radio v-model="radio" label="2">简体中文</el-radio>
-            </div>
-            <div></div>
 
           </form>
+        </div>
         </div>
     </div>
     <!-- 底部信息 -->

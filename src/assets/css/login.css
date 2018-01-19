@@ -1,5 +1,4 @@
-html,body{
-      width: 100%;
+html,body,#app{
       height: 100%;
       margin: 0;
       padding: 0;
@@ -26,9 +25,14 @@ html,body{
     }
     .top{
       height: 80px;
+      line-height: 80px ;
       width: 63%;
-      line-height: 80px;
       margin: 0 auto;
+    }
+    .top img {
+        height: 32px;
+        vertical-align:middle;
+
     }
     .top li{
       list-style: none;
@@ -37,11 +41,45 @@ html,body{
   /*中间登录部分*/
   .center{
     width: 100%;
-    height: 80%;
+    height: 745px;
     background:url(loginbg.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
+    position: center center;
 
+  }
+  .denglu{
+    width: 348px;
+    height: 419px;
+    background-color: #ffffff;
+    position: absolute;
+    top:18%;
+    right: 22.5%;
+    padding: 25px 0 21px 48px;
+    box-sizing: border-box;
+  }
+  .denglu h2{
+    margin-bottom: 43px;
+    font-size: 23px;
+  }
+  .denglu input {
+    margin-bottom: 20px;
+    width: 209px;
+    height: 42px;
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid #dddddd;
+    border-left: 0px;
+    outline: none;
+  }
+  .denglu label{
+    width: 42px;
+    height: 42px;
+    background-color: #cccccc;
+    display: block;
+    float: left;
+    background: #cccccc url("icologin.png") center 10px no-repeat ;
+    border: 1px solid #dddddd;
   }
 
   .footer{
